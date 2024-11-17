@@ -9,14 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        semicolon {
-            bindings = <&kp SEMICOLON>;
-            key-positions = <32 33>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -29,10 +22,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&bt BT_CLR  &kp Q        &kp W         &kp E           &kp R       &kp T          &kp Y    &kp U            &kp I         &kp O             &kp P            &bt BT_NXT
-&none       &mt LCTRL A  &mt LSHIFT S  &mt LALT D      &mt LCMD F  &kp G          &kp H    &mt LCMD J       &mt LALT K    &mt LEFT_SHIFT L  &mt LCTRL COLON  &none
-&none       &kp Z        &kp X         &kp C           &kp V       &kp B          &kp N    &kp M            &kp COMMA     &kp DOT           &kp FSLH         &none
-                                       &mt LCMD TILDE  &lt 1 TAB   &lt 3 SPACE    &kp RET  &lt 2 BACKSPACE  &lt 4 ESCAPE
+&bt BT_CLR    &kp Q        &kp W         &kp E           &kp R       &kp T          &kp Y      &kp U            &kp I         &kp O             &kp P                &kp LEFT_BRACKET
+&kp CAPSLOCK  &mt LCTRL A  &mt LSHIFT S  &mt LALT D      &mt LCMD F  &kp G          &kp H      &mt LCMD J       &mt LALT K    &mt LEFT_SHIFT L  &mt LCTRL SEMICOLON  &kp SQT
+&none         &kp Z        &kp X         &kp C           &kp V       &kp B          &kp N      &kp M            &kp COMMA     &kp DOT           &kp FSLH             &bt BT_NXT
+                                         &mt LCMD TILDE  &lt 1 TAB   &lt 3 SPACE    &lt 5 RET  &lt 2 BACKSPACE  &lt 4 ESCAPE
             >;
         };
 
@@ -44,9 +37,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none      &none           &none     &none     &none     &kp DOLLAR     &kp LEFT_BRACE  &kp UP_ARROW    &kp RIGHT_BRACE  &kp HASH     &none
-&none  &kp LCTRL  &kp LEFT_SHIFT  &kp LALT  &kp LCMD  &none     &kp PLUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PERCENT  &trans
-&none  &none      &none           &trans    &trans    &trans    &kp AT_SIGN    &kp SQT         &kp COMMA       &kp DOT          &kp SLASH    &trans
+&none  &none      &none           &none     &none     &none     &kp DOLLAR     &kp LEFT_BRACE  &kp UP_ARROW    &kp RIGHT_BRACE  &kp PERCENT    &none
+&none  &kp LCTRL  &kp LEFT_SHIFT  &kp LALT  &kp LCMD  &none     &kp PLUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON  &kp COLON
+&none  &none      &none           &trans    &trans    &trans    &kp AT_SIGN    &kp SQT         &kp KP_COMMA    &kp KP_DOT       &kp KP_SLASH   &kp HASH
                                   &none     &trans    &none     &kp BACKSPACE  &trans          &none
             >;
         };
@@ -81,6 +74,15 @@
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        letters {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &kp NON_US_BACKSLASH    &trans  &trans             &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans             &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                  &trans  &trans             &trans
             >;
         };
     };
