@@ -9,32 +9,30 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    behaviors {
+        cstmmt: custom_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
         layer0 {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&bt BT_CLR    &kp Q        &kp W         &kp E           &kp R       &kp T          &kp Y      &kp U            &kp I         &kp O             &kp P                &kp LEFT_BRACKET
-&kp CAPSLOCK  &mt LCTRL A  &mt LSHIFT S  &mt LALT D      &mt LCMD F  &kp G          &kp H      &mt LCMD J       &mt LALT K    &mt LEFT_SHIFT L  &mt LCTRL SEMICOLON  &kp SQT
-&none         &kp Z        &kp X         &kp C           &kp V       &kp B          &kp N      &kp M            &kp COMMA     &kp DOT           &kp FSLH             &bt BT_NXT
-                                         &mt LCMD TILDE  &lt 1 TAB   &lt 3 SPACE    &lt 5 RET  &lt 2 BACKSPACE  &lt 4 ESCAPE
+&bt BT_CLR     &kp Q            &kp W             &kp E           &kp R           &kp T          &kp Y      &kp U                &kp I             &kp O                 &kp P                    &kp LEFT_BRACKET
+&kp CAPSLOCK   &cstmmt LCTRL A  &cstmmt LSHIFT S  &cstmmt LALT D  &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J       &cstmmt LALT K    &cstmmt LEFT_SHIFT L  &cstmmt LCTRL SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z            &kp X             &kp C           &kp V           &kp B          &kp N      &kp M                &kp COMMA         &kp DOT               &kp FSLH                 &bt BT_NXT
+                                &mt LCMD TILDE    &lt 1 TAB       &lt 3 SPACE     &lt 5 RET      &lt 2 BACKSPACE                 &lt 4 ESCAPE
             >;
         };
 
         r1 {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
 &none  &none      &none           &none     &none     &none     &kp DOLLAR     &kp LEFT_BRACE  &kp UP_ARROW    &kp RIGHT_BRACE  &kp PERCENT    &none
@@ -45,11 +43,6 @@
         };
 
         l1 {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
 &none  &kp BACKSLASH  &kp LEFT_BRACKET      &kp MINUS  &kp RIGHT_BRACKET      &kp AMPS         &none  &none     &none     &none           &none      &none
