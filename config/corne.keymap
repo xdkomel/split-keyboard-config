@@ -27,7 +27,7 @@
 &bt BT_CLR     &kp Q            &kp W             &kp E           &kp R           &kp T          &kp Y      &kp U            &kp I           &kp O                 &kp P                    &kp LEFT_BRACKET
 &kp CAPSLOCK   &cstmmt LCTRL A  &cstmmt LSHIFT S  &cstmmt LALT D  &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J   &cstmmt LALT K  &cstmmt LEFT_SHIFT L  &cstmmt LCTRL SEMICOLON  &kp SQT
 &kp BACKSPACE  &kp Z            &kp X             &kp C           &kp V           &kp B          &kp N      &kp M            &kp COMMA       &kp DOT               &kp FSLH                 &bt BT_NXT
-                                                  &mt LCMD TILDE  &lt 1 TAB       &lt 3 SPACE    &lt 5 RET  &lt 2 BACKSPACE  &lt 4 ESCAPE
+                                                  &mt LCMD TILDE  &lt 3 TAB       &lt 1 SPACE    &lt 2 RET  &lt 5 BACKSPACE  &lt 4 ESCAPE
             >;
         };
 
@@ -67,7 +67,7 @@
             >;
         };
 
-        letters {
+        additional {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &kp BACKSLASH           &trans             &trans             &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP    &trans             &trans  &trans  &trans  &trans
