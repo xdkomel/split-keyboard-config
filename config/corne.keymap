@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -24,37 +25,37 @@
 
         layer0 {
             bindings = <
-&bt BT_CLR     &kp Q            &kp W             &kp E           &kp R           &kp T          &kp Y      &kp U            &kp I           &kp O                 &kp P                    &kp LEFT_BRACKET
-&kp CAPSLOCK   &cstmmt LCTRL A  &cstmmt LSHIFT S  &cstmmt LALT D  &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J   &cstmmt LALT K  &cstmmt LEFT_SHIFT L  &cstmmt LCTRL SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z            &kp X             &kp C           &kp V           &kp B          &kp N      &kp M            &kp COMMA       &kp DOT               &kp FSLH                 &bt BT_NXT
-                                                  &mt LCMD GRAVE  &lt 3 TAB       &lt 1 SPACE    &lt 2 RET  &lt 5 BACKSPACE  &lt 4 ESCAPE
+&bt BT_CLR     &kp Q  &kp W             &kp E           &kp R           &kp T          &kp Y      &kp U            &kp I           &kp O                 &kp P          &kp LEFT_BRACKET
+&kp CAPSLOCK   &kp A  &cstmmt LSHIFT S  &cstmmt LALT D  &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J   &cstmmt LALT K  &cstmmt LEFT_SHIFT L  &kp SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z  &cstmmt LCTRL X   &kp C           &kp V           &kp B          &kp N      &kp M            &kp COMMA       &cstmmt LCTRL PERIOD  &kp FSLH       &bt BT_NXT
+                                        &mt LCMD GRAVE  &lt 3 TAB       &lt 1 SPACE    &lt 2 RET  &lt 5 BACKSPACE  &lt 4 ESCAPE
             >;
         };
 
         r1 {
             bindings = <
-&none  &none      &none           &none     &none     &none     &kp ASTERISK   &kp UNDERSCORE  &kp UP_ARROW    &kp AT_SIGN       &trans    &none
-&none  &kp LCTRL  &kp LEFT_SHIFT  &kp LALT  &kp LCMD  &none     &kp PLUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans    &trans
-&none  &none      &none           &trans    &trans    &trans    &kp MINUS      &kp EQUAL       &kp LESS_THAN   &kp GREATER_THAN  &kp HASH  &trans
-                                  &none     &trans    &none     &kp BACKSPACE  &trans          &none
+&none  &none   &none           &none     &none     &none     &kp ASTERISK   &kp UNDERSCORE  &kp UP_ARROW    &kp AT_SIGN       &trans    &none
+&none  &trans  &kp LEFT_SHIFT  &kp LALT  &kp LCMD  &none     &kp PLUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans    &trans
+&none  &none   &kp LCTRL       &trans    &trans    &trans    &kp MINUS      &kp EQUAL       &kp LESS_THAN   &kp GREATER_THAN  &kp HASH  &trans
+                               &none     &trans    &none     &kp BACKSPACE  &trans          &none
             >;
         };
 
         l1 {
             bindings = <
-&none  &trans     &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT      &none  &none     &none     &none           &none      &none
-&none  &trans     &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH    &none  &kp LCMD  &kp LALT  &kp LEFT_SHIFT  &kp LCTRL  &none
-&none  &kp CARET  &kp DOLLAR       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND    &none  &none     &none     &none           &none      &none
+&none  &trans     &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT      &none  &none     &none     &none           &none   &none
+&none  &trans     &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH    &none  &kp LCMD  &kp LALT  &kp LEFT_SHIFT  &trans  &none
+&none  &kp CARET  &kp DOLLAR       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPERSAND    &none  &none     &none     &kp LCTRL       &none   &none
                                    &none                 &none                  &kp BACKSPACE    &none  &none     &none
             >;
         };
 
         r2 {
             bindings = <
-&trans  &trans     &trans          &trans    &trans    &trans    &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans  &kp LCTRL  &kp LEFT_SHIFT  &kp LALT  &kp LCMD  &trans    &trans      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans  &trans     &trans          &trans    &trans    &trans    &trans      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-                                   &trans    &trans    &trans    &kp ESCAPE  &kp NUMBER_0  &trans
+&trans  &trans  &trans          &trans    &trans    &trans    &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+&trans  &trans  &kp LEFT_SHIFT  &kp LALT  &kp LCMD  &trans    &trans      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans  &trans  &kp LCTRL       &trans    &trans    &trans    &trans      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
+                                &trans    &trans    &trans    &kp ESCAPE  &kp NUMBER_0  &trans
             >;
         };
 
@@ -69,10 +70,10 @@
 
         additional {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp BACKSLASH           &trans             &trans             &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP    &trans             &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_DEC    &kp K_VOLUME_DOWN  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans             &trans             &trans
+&trans  &trans  &trans  &trans  &trans      &kp BACKSLASH           &trans             &trans             &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &bl BL_TOG  &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP    &trans             &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans      &kp C_BRIGHTNESS_DEC    &kp K_VOLUME_DOWN  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
+                        &trans  &trans      &trans                  &trans             &trans             &trans
             >;
         };
     };
