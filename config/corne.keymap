@@ -24,9 +24,9 @@
 
         layer0 {
             bindings = <
-&bt BT_CLR     &kp Q  &kp W             &kp E           &kp R           &kp T          &kp Y      &kp U            &kp I           &kp O                 &kp P          &kp LEFT_BRACKET
+&kp ESCAPE     &kp Q  &kp W             &kp E           &kp R           &kp T          &kp Y      &kp U            &kp I           &kp O                 &kp P          &kp LEFT_BRACKET
 &kp CAPSLOCK   &kp A  &cstmmt LSHIFT S  &cstmmt LALT D  &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J   &cstmmt LALT K  &cstmmt LEFT_SHIFT L  &kp SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z  &cstmmt LCTRL X   &kp C           &kp V           &kp B          &kp N      &kp M            &kp COMMA       &cstmmt LCTRL PERIOD  &kp FSLH       &bt BT_NXT
+&kp BACKSPACE  &kp Z  &cstmmt LCTRL X   &kp C           &kp V           &kp B          &kp N      &kp M            &kp COMMA       &cstmmt LCTRL PERIOD  &kp FSLH       &kp F5
                                         &lt 4 GRAVE     &mt LCMD TAB    &lt 2 SPACE    &lt 1 RET  &lt 3 BACKSPACE  &lt 5 ESCAPE
             >;
         };
@@ -69,10 +69,10 @@
 
         additional {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp BACKSLASH    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans           &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans           &trans  &kp RIGHT_BRACKET     &kp K_MUTE         &trans                &trans  &trans
-                        &trans  &trans  &trans           &trans  &trans                &trans
+&trans  &trans  &trans  &bt BT_NXT  &trans  &kp BACKSLASH    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &trans
+&trans  &trans  &trans  &bt BT_CLR  &trans  &trans           &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &trans
+&trans  &trans  &trans  &trans      &trans  &trans           &trans  &kp RIGHT_BRACKET     &kp K_MUTE         &trans                &trans  &trans
+                        &trans      &trans  &trans           &trans  &trans                &trans
             >;
         };
     };
