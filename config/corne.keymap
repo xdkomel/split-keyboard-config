@@ -16,18 +16,6 @@
             flavor = "balanced";
             tapping-term-ms = <250>;
             bindings = <&kp>, <&kp>;
-
-            require-prior-idle-ms = <100>;
-        };
-
-        doubletap: doubletap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "DOUBLETAP";
-            bindings = <&lt>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
         };
     };
 
@@ -36,10 +24,10 @@
 
         layer0 {
             bindings = <
-&kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T          &kp Y      &kp U                   &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
-&kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J          &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B          &kp N      &kp M                   &kp COMMA             &kp PERIOD      &kp FSLH       &kp F5
-                                      &lt 4 GRAVE           &mt LCMD TAB    &lt 2 SPACE    &lt 1 RET  &doubletap 3 BACKSPACE  &lt 5 ESCAPE
+&kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T          &kp Y      &kp U            &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
+&kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J   &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B          &kp N      &kp M            &kp COMMA             &kp PERIOD      &kp FSLH       &kp F5
+                                      &lt 4 GRAVE           &mt LCMD TAB    &lt 2 SPACE    &lt 1 RET  &lt 3 BACKSPACE  &lt 5 ESCAPE
             >;
         };
 
