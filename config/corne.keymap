@@ -30,8 +30,7 @@
 
         quick_caps {
             bindings = <&kp CAPS>;
-            key-positions = <15 21>;
-            timeout-ms = <300>;
+            key-positions = <15 21 14 22>;
             layers = <0>;
         };
     };
