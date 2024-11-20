@@ -22,7 +22,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer0 {
+        base {
             bindings = <
 &kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T          &kp Y      &kp U            &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
 &kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J   &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
@@ -70,9 +70,18 @@
         additional {
             bindings = <
 &trans  &trans  &trans  &bt BT_NXT  &trans  &kp BACKSLASH    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &trans
-&trans  &trans  &trans  &bt BT_CLR  &trans  &trans           &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &trans
+&trans  &trans  &trans  &bt BT_CLR  &trans  &tog 6           &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &trans
 &trans  &trans  &trans  &trans      &trans  &trans           &trans  &kp RIGHT_BRACKET     &kp K_MUTE         &trans                &trans  &trans
                         &trans      &trans  &trans           &trans  &trans                &trans
+            >;
+        };
+
+        game_mode {
+            bindings = <
+&kp ESCAPE      &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y      &kp U          &kp I      &kp O       &kp P          &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H      &kp J          &kp K      &kp L       &kp SEMICOLON  &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N      &kp M          &kp COMMA  &kp PERIOD  &kp FSLH       &kp RIGHT_SHIFT
+                              &kp LALT  &kp LCMD  &kp SPACE    &kp ENTER  &kp BACKSPACE  &trans
             >;
         };
     };
