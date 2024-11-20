@@ -13,8 +13,8 @@
         cstmmt: custom_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <150>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -24,27 +24,27 @@
 
         layer0 {
             bindings = <
-&kp ESCAPE     &kp Q  &kp W             &cstmmt LCTRL E  &kp R           &kp T          &kp Y      &kp U            &cstmmt LCTRL I  &kp O                 &kp P          &kp LEFT_BRACKET
-&kp CAPSLOCK   &kp A  &cstmmt LSHIFT S  &cstmmt LALT D   &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J   &cstmmt LALT K   &cstmmt LEFT_SHIFT L  &kp SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z  &kp X             &kp C            &kp V           &kp B          &kp N      &kp M            &kp COMMA        &kp PERIOD            &kp FSLH       &kp F5
-                                        &lt 4 GRAVE      &mt LCMD TAB    &lt 2 SPACE    &lt 1 RET  &lt 3 BACKSPACE  &lt 5 ESCAPE
+&kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T          &kp Y      &kp U            &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
+&kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J   &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B          &kp N      &kp M            &kp COMMA             &kp PERIOD      &kp FSLH       &kp F5
+                                      &lt 4 GRAVE           &mt LCMD TAB    &lt 2 SPACE    &lt 1 RET  &lt 3 BACKSPACE  &lt 5 ESCAPE
             >;
         };
 
         r1 {
             bindings = <
-&trans  &trans  &trans          &kp LCTRL  &trans    &trans    &kp BACKSLASH          &kp PIPE        &kp UP_ARROW          &kp ASTERISK     &trans       &trans
-&trans  &trans  &kp LEFT_SHIFT  &kp LALT   &kp LCMD  &trans    &kp AMPERSAND          &kp LEFT_ARROW  &kp DOWN_ARROW        &kp RIGHT_ARROW  &kp PERCENT  &trans
-&trans  &trans  &trans          &trans     &trans    &trans    &kp RIGHT_PARENTHESIS  &kp SQT         &kp LEFT_PARENTHESIS  &kp AT_SIGN      &kp HASH     &trans
-                                &trans     &trans    &trans    &trans                 &trans          &trans
+&trans  &trans  &trans    &kp LCTRL       &trans    &trans    &kp BACKSLASH          &kp PIPE        &kp UP_ARROW          &kp ASTERISK     &trans       &trans
+&trans  &trans  &kp LALT  &kp LEFT_SHIFT  &kp LCMD  &trans    &kp AMPERSAND          &kp LEFT_ARROW  &kp DOWN_ARROW        &kp RIGHT_ARROW  &kp PERCENT  &trans
+&trans  &trans  &trans    &trans          &trans    &trans    &kp RIGHT_PARENTHESIS  &kp SQT         &kp LEFT_PARENTHESIS  &kp AT_SIGN      &kp HASH     &trans
+                          &trans          &trans    &trans    &trans                 &trans          &trans
             >;
         };
 
         l1 {
             bindings = <
-&trans  &trans     &kp LEFT_BRACKET  &kp MINUS       &kp EXCL          &kp RIGHT_BRACKET    &trans  &trans         &kp LCTRL  &trans          &trans  &trans
-&trans  &kp CARET  &kp LEFT_BRACE    &kp UNDERSCORE  &kp DOLLAR        &kp RIGHT_BRACE      &trans  &kp LCMD       &kp LALT   &kp LEFT_SHIFT  &trans  &trans
-&trans  &trans     &kp EQUAL         &kp LESS_THAN   &kp GREATER_THAN  &kp PLUS             &trans  &trans         &trans     &trans          &trans  &trans
+&trans  &trans     &kp LEFT_BRACKET  &kp MINUS       &kp EXCL          &kp RIGHT_BRACKET    &trans  &trans         &kp LCTRL       &trans    &trans  &trans
+&trans  &kp CARET  &kp LEFT_BRACE    &kp UNDERSCORE  &kp DOLLAR        &kp RIGHT_BRACE      &trans  &kp LCMD       &kp LEFT_SHIFT  &kp LALT  &trans  &trans
+&trans  &trans     &kp EQUAL         &kp LESS_THAN   &kp GREATER_THAN  &kp PLUS             &trans  &trans         &trans          &trans    &trans  &trans
                                      &trans          &trans            &trans               &trans  &kp BACKSPACE  &trans
             >;
         };
