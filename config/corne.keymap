@@ -19,6 +19,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        ch_locale {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <38 39>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
