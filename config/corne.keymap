@@ -58,7 +58,7 @@
             >;
         };
 
-        l2 {
+        fun {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
@@ -78,10 +78,10 @@
 
         game_mode {
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y      &kp U          &kp I      &kp O       &kp P          &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H      &kp J          &kp K      &kp L       &kp SEMICOLON  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N      &kp M          &kp COMMA  &kp PERIOD  &kp FSLH       &tog 6
-                              &kp LALT  &kp LCMD  &kp SPACE    &kp ENTER  &kp BACKSPACE  &none
+&kp ESCAPE      &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y      &kp U          &kp I       &kp O       &kp P          &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H      &kp J          &kp K       &kp L       &kp SEMICOLON  &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N      &kp M          &kp COMMA   &kp PERIOD  &kp FSLH       &tog 6
+                              &kp LALT  &kp LCMD  &kp SPACE    &kp ENTER  &kp BACKSPACE  &lt 3 CAPS
             >;
         };
     };
