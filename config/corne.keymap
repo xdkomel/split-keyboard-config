@@ -27,6 +27,13 @@
             key-positions = <38 39>;
             layers = <0>;
         };
+
+        quick_caps {
+            bindings = <&kp CAPS>;
+            key-positions = <15 21>;
+            timeout-ms = <300>;
+            layers = <0>;
+        };
     };
 
     keymap {
