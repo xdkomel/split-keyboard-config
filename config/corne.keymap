@@ -42,52 +42,43 @@
             bindings = <
 &kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T          &kp Y      &kp U            &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
 &kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G          &kp H      &cstmmt LCMD J   &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B          &kp N      &kp M            &kp COMMA             &kp PERIOD      &kp FSLH       &kp F5
-                                      &kp GRAVE             &mt LCMD TAB    &lt 2 SPACE    &lt 1 RET  &lt 3 BACKSPACE  &lt 4 ESCAPE
+&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B          &kp N      &kp M            &kp COMMA             &kp PERIOD      &kp FSLH       &tog 4
+                                      &kp GRAVE             &mt LCMD TAB    &lt 2 SPACE    &lt 1 RET  &lt 3 BACKSPACE  &kp ESCAPE
             >;
         };
 
-        arrows-and-funs {
+        arrows_and_symbols {
             bindings = <
-&trans  &trans  &kp F1       &mt LCTRL F2       &kp F3       &kp F10    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &trans  &mt LALT F4  &mt LEFT_SHIFT F5  &mt LCMD F6  &kp F11    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &kp F7       &kp F8             &kp F9       &kp F12    &trans  &kp SQT         &kp UNDERSCORE  &kp AT_SIGN      &trans  &trans
-                             &trans             &trans       &trans     &trans  &trans          &trans
+&trans  &trans    &kp MINUS            &mt LCTRL LEFT_BRACKET           &kp AT_SIGN    &kp PIPE         &kp BACKSLASH      &kp RIGHT_PARENTHESIS  &kp UP_ARROW      &kp RIGHT_BRACE  &trans       &trans
+&trans  &trans    &mt LALT UNDERSCORE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCMD SQT   &kp AMPERSAND    &kp RIGHT_BRACKET  &kp LEFT_ARROW         &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp CARET    &trans
+&trans  &kp HASH  &kp LEFT_BRACE       &kp EQUAL                        &kp LESS_THAN  &kp PLUS         &kp ASTERISK       &kp DOLLAR             &kp GREATER_THAN  &kp EXCLAMATION  &kp PERCENT  &trans
+                                       &trans                           &trans         &trans           &trans             &trans                 &trans
             >;
         };
 
-        symbols {
+        numbers {
             bindings = <
-&trans  &trans  &kp ASTERISK        &cstmmt LCTRL AMPERSAND  &kp PIPE                  &trans       &trans     &kp BACKSLASH                  &cstmmt LCTRL LEFT_BRACKET            &kp RIGHT_BRACKET        &trans  &trans
-&trans  &trans  &cstmmt LALT MINUS  &cstmmt LSHIFT EQUAL     &cstmmt LCMD EXCLAMATION  &kp HASH     &kp CARET  &cstmmt LCMD LEFT_PARENTHESIS  &cstmmt LEFT_SHIFT RIGHT_PARENTHESIS  &cstmmt LALT LEFT_BRACE  &trans  &trans
-&trans  &trans  &kp PLUS            &kp DOLLAR               &kp PERCENT               &kp SLASH    &trans     &kp RIGHT_BRACE                &kp LESS_THAN                         &kp GREATER_THAN         &trans  &trans
-                                    &trans                   &trans                    &trans       &trans     &kp BACKSPACE                  &trans
+&trans  &trans  &trans          &mt LCTRL PLUS        &trans             &trans    &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+&trans  &trans  &mt LALT SLASH  &mt LEFT_SHIFT MINUS  &mt LCMD ASTERISK  &trans    &kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans  &trans  &kp PERCENT     &kp EQUAL             &trans             &trans    &kp COMMA     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
+                                &trans                &trans             &trans    &kp NUMBER_0  &trans        &trans
             >;
         };
 
-        num {
+        functional {
             bindings = <
-&trans  &trans  &kp ASTERISK    &kp LCTRL             &trans    &trans       &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans  &trans  &mt LALT MINUS  &mt LEFT_SHIFT EQUAL  &kp LCMD  &trans       &kp N0      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans  &trans  &kp PLUS        &trans                &trans    &kp SLASH    &kp COMMA   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-                                &trans                &trans    &trans       &trans      &trans        &trans
-            >;
-        };
-
-        additional {
-            bindings = <
-&trans  &trans  &trans  &bt BT_NXT  &trans  &kp BACKSLASH    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &trans
-&trans  &trans  &trans  &bt BT_CLR  &trans  &tog 5           &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &trans
-&trans  &trans  &trans  &trans      &trans  &trans           &trans  &kp RIGHT_BRACKET     &kp K_MUTE         &trans                &trans  &trans
-                        &trans      &trans  &trans           &trans  &trans                &trans
+&trans  &trans  &kp F1  &kp F2   &kp F3   &kp BACKSLASH    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &bt BT_NXT
+&trans  &trans  &kp F4  &kp F5   &kp F6   &trans           &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &bt BT_CLR
+&trans  &trans  &kp F7  &kp F8   &kp F9   &trans           &trans  &kp RIGHT_BRACKET     &kp K_MUTE         &trans                &trans  &trans
+                        &kp F12  &kp F11  &kp F10          &trans  &trans                &trans
             >;
         };
 
         game_mode {
             bindings = <
-&lt 3 ESCAPE    &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y      &kp U          &kp I      &kp O       &kp P          &kp LEFT_BRACKET
+&lt 2 ESCAPE    &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y      &kp U          &kp I      &kp O       &kp P          &kp LEFT_BRACKET
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H      &kp J          &kp K      &kp L       &kp SEMICOLON  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N      &kp M          &kp COMMA  &kp PERIOD  &kp FSLH       &tog 5
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N      &kp M          &kp COMMA  &kp PERIOD  &kp FSLH       &tog 4
                               &kp LALT  &kp LCMD  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp RSHFT
             >;
         };
