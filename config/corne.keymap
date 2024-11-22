@@ -51,26 +51,26 @@
             bindings = <
 &trans  &trans  &kp F1       &mt LCTRL F2       &kp F3       &kp F10    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
 &trans  &trans  &mt LALT F4  &mt LEFT_SHIFT F5  &mt LCMD F6  &kp F11    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &kp F7       &kp F8             &kp F9       &kp F12    &trans  &kp UNDERSCORE  &kp SQT         &kp SEMICOLON    &trans  &trans
+&trans  &trans  &kp F7       &kp F8             &kp F9       &kp F12    &trans  &kp SQT         &kp UNDERSCORE  &kp AT_SIGN      &trans  &trans
                              &trans             &trans       &trans     &trans  &trans          &trans
             >;
         };
 
         symbols {
             bindings = <
-&trans  &trans  &kp PERCENT         &cstmmt LCTRL LEFT_BRACKET       &kp PLUS            &kp CARET       &kp RIGHT_BRACKET      &kp BACKSLASH       &cstmmt LCTRL PIPE            &trans                     &trans  &trans
-&trans  &trans  &cstmmt LALT EQUAL  &cstmmt LSHIFT LEFT_PARENTHESIS  &cstmmt LCMD SLASH  &kp ASTERISK    &kp RIGHT_PARENTHESIS  &cstmmt LCMD COLON  &cstmmt LEFT_SHIFT LESS_THAN  &cstmmt LALT GREATER_THAN  &trans  &trans
-&trans  &trans  &kp AT_SIGN         &kp LEFT_BRACE                   &kp MINUS           &kp HASH        &kp RIGHT_BRACE        &kp AMPERSAND       &kp DOLLAR                    &kp EXCLAMATION            &trans  &trans
-                                    &trans                           &trans              &trans          &trans                 &kp BACKSPACE       &trans
+&trans  &trans  &kp ASTERISK        &cstmmt LCTRL AMPERSAND  &kp PIPE                  &trans       &trans     &kp BACKSLASH                  &cstmmt LCTRL LEFT_BRACKET            &kp RIGHT_BRACKET        &trans  &trans
+&trans  &trans  &cstmmt LALT MINUS  &cstmmt LSHIFT EQUAL     &cstmmt LCMD EXCLAMATION  &kp HASH     &kp CARET  &cstmmt LCMD LEFT_PARENTHESIS  &cstmmt LEFT_SHIFT RIGHT_PARENTHESIS  &cstmmt LALT LEFT_BRACE  &trans  &trans
+&trans  &trans  &kp PLUS            &kp DOLLAR               &kp PERCENT               &kp SLASH    &trans     &kp RIGHT_BRACE                &kp LESS_THAN                         &kp GREATER_THAN         &trans  &trans
+                                    &trans                   &trans                    &trans       &trans     &kp BACKSPACE                  &trans
             >;
         };
 
         num {
             bindings = <
-&trans  &trans  &trans          &kp LCTRL       &kp PLUS        &trans          &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans  &trans  &mt LALT EQUAL  &kp LEFT_SHIFT  &mt LCMD SLASH  &kp ASTERISK    &kp N0      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans  &trans  &trans          &trans          &kp MINUS       &trans          &kp COMMA   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-                                &trans          &trans          &trans          &trans      &trans        &trans
+&trans  &trans  &kp ASTERISK    &kp LCTRL             &trans    &trans       &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+&trans  &trans  &mt LALT MINUS  &mt LEFT_SHIFT EQUAL  &kp LCMD  &trans       &kp N0      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&trans  &trans  &kp PLUS        &trans                &trans    &kp SLASH    &kp COMMA   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
+                                &trans                &trans    &trans       &trans      &trans        &trans
             >;
         };
 
