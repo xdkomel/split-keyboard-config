@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -40,19 +40,19 @@
 
         base {
             bindings = <
-&kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T             &kp Y      &kp U                     &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
-&kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G             &kp H      &cstmmt LCMD J            &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B             &kp N      &kp M                     &kp COMMA             &kp PERIOD      &kp FSLH       &tog 4
-                                      &kp GRAVE             &lt 2 TAB       &mt LCMD SPACE    &lt 1 RET  &mt LEFT_SHIFT BACKSPACE  &lt 3 ESCAPE
+&kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T             &kp Y      &kp U            &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
+&kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G             &kp H      &cstmmt LCMD J   &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B             &kp N      &kp M            &kp COMMA             &kp PERIOD      &kp FSLH       &tog 4
+                                      &kp GRAVE             &lt 2 TAB       &mt LCMD SPACE    &lt 1 RET  &lt 3 BACKSPACE  &kp ESCAPE
             >;
         };
 
         arrows_and_symbols {
             bindings = <
-&trans  &trans    &kp MINUS            &mt LCTRL LEFT_BRACKET           &kp AT_SIGN    &kp PIPE         &kp BACKSLASH      &kp RIGHT_PARENTHESIS  &kp UP_ARROW      &kp RIGHT_BRACE  &trans       &trans
-&trans  &trans    &mt LALT UNDERSCORE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCMD SQT   &kp AMPERSAND    &kp RIGHT_BRACKET  &kp LEFT_ARROW         &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp CARET    &trans
-&trans  &kp HASH  &kp LEFT_BRACE       &kp EQUAL                        &kp LESS_THAN  &kp PLUS         &kp ASTERISK       &kp DOLLAR             &kp GREATER_THAN  &kp EXCLAMATION  &kp PERCENT  &trans
-                                       &trans                           &trans         &trans           &trans             &trans                 &trans
+&trans  &trans    &kp MINUS            &mt LCTRL LEFT_BRACKET           &kp AT_SIGN   &kp PIPE         &kp RIGHT_BRACKET      &kp ASTERISK    &kp UP_ARROW      &kp PLUS         &trans       &trans
+&trans  &trans    &mt LALT UNDERSCORE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCMD SQT  &kp AMPERSAND    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp CARET    &trans
+&trans  &kp HASH  &kp LEFT_BRACE       &kp LESS_THAN                    &kp EQUAL     &kp BACKSLASH    &kp RIGHT_BRACE        &kp DOLLAR      &kp GREATER_THAN  &kp EXCLAMATION  &kp PERCENT  &trans
+                                       &trans                           &trans        &trans           &trans                 &trans          &trans
             >;
         };
 
