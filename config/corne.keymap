@@ -41,10 +41,10 @@
 
         base {
             bindings = <
-&kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T             &kp Y            &kp U           &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
-&kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G             &kp H            &cstmmt LCMD J  &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B             &kp N            &kp M           &kp COMMA             &kp PERIOD      &kp FSLH       &tog 4
-                                      &kp GRAVE             &lt 3 TAB       &mt LCMD SPACE    &lt 1 BACKSPACE  &lt 2 ENTER     &kp ESCAPE
+&kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T             &kp Y        &kp U            &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
+&kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G             &kp H        &cstmmt LCMD J   &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B             &kp N        &kp M            &kp COMMA             &kp PERIOD      &kp FSLH       &tog 4
+                                      &kp GRAVE             &lt 3 TAB       &mt LCMD SPACE    &lt 1 ENTER  &lt 2 BACKSPACE  &kp ESCAPE
             >;
         };
 
