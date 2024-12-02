@@ -41,10 +41,10 @@
 
         base {
             bindings = <
-&kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T             &kp Y      &kp U            &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
-&kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G             &kp H      &cstmmt LCMD J   &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B             &kp N      &kp M            &kp COMMA             &kp PERIOD      &kp FSLH       &tog 4
-                                      &kp GRAVE             &lt 2 TAB       &mt LCMD SPACE    &lt 1 RET  &lt 3 BACKSPACE  &kp ESCAPE
+&kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T             &kp Y            &kp U           &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
+&kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G             &kp H            &cstmmt LCMD J  &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B             &kp N            &kp M           &kp COMMA             &kp PERIOD      &kp FSLH       &tog 4
+                                      &kp GRAVE             &lt 3 TAB       &mt LCMD SPACE    &lt 1 BACKSPACE  &lt 2 ENTER     &kp ESCAPE
             >;
         };
 
@@ -59,19 +59,19 @@
 
         numbers {
             bindings = <
-&trans  &trans  &trans          &mt LCTRL PLUS        &trans             &trans    &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans  &trans  &mt LALT SLASH  &mt LEFT_SHIFT MINUS  &mt LCMD ASTERISK  &trans    &kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans  &trans  &kp PERCENT     &kp EQUAL             &trans             &trans    &kp COMMA     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-                                &trans                &trans             &trans    &kp NUMBER_0  &trans        &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA    &trans  &kp ASTERISK    &mt LCTRL PERCENT  &kp PLUS        &trans  &trans
+&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOT      &trans  &mt LCMD SLASH  &mt LSHIFT EQUAL   &mt LALT MINUS  &trans  &trans
+&trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans       &trans  &trans          &trans             &trans          &trans  &trans
+                              &kp NUMBER_0  &trans        &trans       &trans  &trans          &trans
             >;
         };
 
         functional {
             bindings = <
-&trans  &trans  &kp F1  &kp F2   &kp F3   &kp BACKSLASH    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &bt BT_NXT
-&trans  &trans  &kp F4  &kp F5   &kp F6   &trans           &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &bt BT_CLR
-&trans  &trans  &kp F7  &kp F8   &kp F9   &trans           &trans  &kp RIGHT_BRACKET     &kp K_MUTE         &trans                &trans  &trans
-                        &kp F12  &kp F11  &kp F10          &trans  &trans                &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp BACKSLASH    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &bt BT_NXT
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans           &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &bt BT_CLR
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans           &trans  &kp RIGHT_BRACKET     &kp K_MUTE         &trans                &trans  &trans
+                         &trans  &trans  &trans           &trans  &trans                &trans
             >;
         };
 
