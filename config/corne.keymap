@@ -13,7 +13,7 @@
         cstmmt: custom_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
@@ -26,6 +26,7 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <38 39>;
             layers = <0>;
+            timeout-ms = <80>;
         };
 
         quick_caps {
@@ -53,25 +54,25 @@
 &trans  &trans    &kp MINUS            &mt LCTRL LEFT_BRACKET           &kp AT_SIGN   &kp PIPE         &kp RIGHT_BRACKET      &kp ASTERISK    &kp UP_ARROW      &kp PLUS         &trans       &trans
 &trans  &trans    &mt LALT UNDERSCORE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCMD SQT  &kp AMPERSAND    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp CARET    &trans
 &trans  &kp HASH  &kp LEFT_BRACE       &kp LESS_THAN                    &kp EQUAL     &kp BACKSLASH    &kp RIGHT_BRACE        &kp DOLLAR      &kp GREATER_THAN  &kp EXCLAMATION  &kp PERCENT  &trans
-                                       &trans                           &trans        &trans           &trans                 &trans          &trans
+                                       &trans                           &trans        &kp SPACE        &trans                 &trans          &trans
             >;
         };
 
         numbers {
             bindings = <
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA    &trans  &kp ASTERISK    &mt LCTRL PERCENT  &kp PLUS        &trans  &trans
-&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOT      &trans  &mt LCMD SLASH  &mt LSHIFT EQUAL   &mt LALT MINUS  &trans  &trans
-&trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans       &trans  &trans          &trans             &trans          &trans  &trans
-                              &kp NUMBER_0  &trans        &trans       &trans  &trans          &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp COMMA    &trans  &kp ASTERISK    &mt LCTRL PERCENT  &kp PLUS        &trans  &trans
+&trans  &trans  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp DOT      &trans  &mt LCMD SLASH  &mt LSHIFT EQUAL   &mt LALT MINUS  &trans  &trans
+&trans  &trans  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &trans       &trans  &trans          &trans             &trans          &trans  &trans
+                              &kp BACKSPACE  &kp NUMBER_0  &trans       &trans  &trans          &trans
             >;
         };
 
         functional {
             bindings = <
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp BACKSLASH    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &bt BT_NXT
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans           &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &bt BT_CLR
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans           &trans  &kp RIGHT_BRACKET     &kp K_MUTE         &trans                &trans  &trans
-                         &trans  &trans  &trans           &trans  &trans                &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &bt BT_NXT
+&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &bt BT_CLR
+&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12    &trans  &trans                &kp K_MUTE         &trans                &trans  &trans
+                        &trans  &trans  &trans     &trans  &kp BACKSPACE         &trans
             >;
         };
 
