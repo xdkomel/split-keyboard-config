@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -42,27 +42,27 @@
 
         base {
             bindings = <
-&kp ESCAPE     &kp Q  &kp W           &cstmmt LCTRL E       &kp R           &kp T             &kp Y        &kp U            &cstmmt LCTRL I       &kp O           &kp P          &kp LEFT_BRACKET
-&kp CAPSLOCK   &kp A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G             &kp H        &cstmmt LCMD J   &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &kp SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z  &kp X           &kp C                 &kp V           &kp B             &kp N        &kp M            &kp COMMA             &kp PERIOD      &kp FSLH       &tog 4
-                                      &kp GRAVE             &lt 3 TAB       &mt LCMD SPACE    &lt 1 ENTER  &lt 2 BACKSPACE  &kp ESCAPE
+&kp ESCAPE     &kp Q            &kp W           &kp E                 &kp R           &kp T             &kp Y        &kp U            &kp I                 &kp O           &kp P                    &kp LEFT_BRACKET
+&kp CAPSLOCK   &cstmmt LCTRL A  &cstmmt LALT S  &cstmmt LEFT_SHIFT D  &cstmmt LCMD F  &kp G             &kp H        &cstmmt LCMD J   &cstmmt LEFT_SHIFT K  &cstmmt LALT L  &cstmmt LCTRL SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z            &kp X           &kp C                 &kp V           &kp B             &kp N        &kp M            &kp COMMA             &kp PERIOD      &kp FSLH                 &tog 4
+                                                &kp GRAVE             &lt 3 TAB       &mt LCMD SPACE    &lt 1 ENTER  &lt 2 BACKSPACE  &kp ESCAPE
             >;
         };
 
         arrows_and_symbols {
             bindings = <
-&trans  &trans    &kp MINUS            &mt LCTRL LEFT_BRACKET           &kp AT_SIGN   &kp PIPE         &kp RIGHT_BRACKET      &kp ASTERISK    &kp UP_ARROW      &kp PLUS         &trans       &trans
-&trans  &trans    &mt LALT UNDERSCORE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCMD SQT  &kp AMPERSAND    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp CARET    &trans
-&trans  &kp HASH  &kp LEFT_BRACE       &kp LESS_THAN                    &kp EQUAL     &kp BACKSLASH    &kp RIGHT_BRACE        &kp DOLLAR      &kp GREATER_THAN  &kp EXCLAMATION  &kp PERCENT  &trans
-                                       &trans                           &trans        &kp SPACE        &trans                 &trans          &trans
+&trans  &trans     &kp MINUS            &kp LEFT_BRACKET                 &kp AT_SIGN   &kp PIPE         &kp RIGHT_BRACKET      &kp ASTERISK    &kp UP_ARROW      &kp PLUS         &trans       &trans
+&trans  &kp LCTRL  &mt LALT UNDERSCORE  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCMD SQT  &kp AMPERSAND    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp CARET    &trans
+&trans  &kp HASH   &kp LEFT_BRACE       &kp LESS_THAN                    &kp EQUAL     &kp BACKSLASH    &kp RIGHT_BRACE        &kp DOLLAR      &kp GREATER_THAN  &kp EXCLAMATION  &kp PERCENT  &trans
+                                        &trans                           &trans        &kp SPACE        &trans                 &trans          &trans
             >;
         };
 
         numbers {
             bindings = <
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp COMMA    &trans  &kp ASTERISK    &mt LCTRL PERCENT  &kp PLUS        &trans  &trans
-&trans  &trans  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp DOT      &trans  &mt LCMD SLASH  &mt LSHIFT EQUAL   &mt LALT MINUS  &trans  &trans
-&trans  &trans  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &trans       &trans  &trans          &trans             &trans          &trans  &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp COMMA    &trans  &kp ASTERISK    &kp PERCENT       &kp PLUS        &trans     &trans
+&trans  &trans  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp DOT      &trans  &mt LCMD SLASH  &mt LSHIFT EQUAL  &mt LALT MINUS  &kp LCTRL  &trans
+&trans  &trans  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &trans       &trans  &trans          &trans            &trans          &trans     &trans
                               &kp BACKSPACE  &kp NUMBER_0  &trans       &trans  &trans          &trans
             >;
         };
