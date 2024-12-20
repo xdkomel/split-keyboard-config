@@ -32,7 +32,7 @@
 
         quick_caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <15 20>;
+            key-positions = <3 8>;
             layers = <0>;
             timeout-ms = <80>;
         };
@@ -43,9 +43,9 @@
 
         base {
             bindings = <
-&kp ESCAPE     &kp Q            &kp W           &cstmmt LSHFT E  &kp R           &kp T             &kp Y        &kp U           &mt LSHIFT I  &kp O           &kp P                    &kp LEFT_BRACKET
-&kp CAPSLOCK   &cstmmt LCTRL A  &cstmmt LALT S  &kp D            &cstmmt LCMD F  &kp G             &kp H        &cstmmt LCMD J  &kp K         &cstmmt LALT L  &cstmmt LCTRL SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z            &kp X           &kp C            &kp V           &kp B             &kp N        &kp M           &kp COMMA     &kp PERIOD      &kp FSLH                 &tog 4
+&kp ESCAPE     &kp Q            &kp W           &cstmmt LSHFT E  &kp R           &kp T             &kp Y        &kp U           &cstmmt LSHIFT I  &kp O           &kp P                    &kp LEFT_BRACKET
+&kp CAPSLOCK   &cstmmt LCTRL A  &cstmmt LALT S  &kp D            &cstmmt LCMD F  &kp G             &kp H        &cstmmt LCMD J  &kp K             &cstmmt LALT L  &cstmmt LCTRL SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z            &kp X           &kp C            &kp V           &kp B             &kp N        &kp M           &kp COMMA         &kp PERIOD      &kp FSLH                 &tog 4
                                                 &kp GRAVE        &lt 3 TAB       &mt LCMD SPACE    &lt 1 ENTER  &kp BACKSPACE   &kp ESCAPE
             >;
         };
