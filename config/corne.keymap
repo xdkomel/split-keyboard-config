@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 / {
     behaviors {
@@ -45,32 +44,23 @@
             bindings = <
 &kp ESCAPE     &kp Q            &kp W           &cstmmt LSHFT E  &kp R           &kp T             &kp Y        &kp U           &cstmmt LSHIFT I  &kp O           &kp P                    &kp LEFT_BRACKET
 &kp CAPSLOCK   &cstmmt LCTRL A  &cstmmt LALT S  &kp D            &cstmmt LCMD F  &kp G             &kp H        &cstmmt LCMD J  &kp K             &cstmmt LALT L  &cstmmt LCTRL SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z            &kp X           &kp C            &kp V           &kp B             &kp N        &kp M           &kp COMMA         &kp PERIOD      &kp FSLH                 &tog 4
-                                                &kp GRAVE        &lt 3 TAB       &mt LCMD SPACE    &lt 1 ENTER  &kp BACKSPACE   &kp ESCAPE
+&kp BACKSPACE  &kp Z            &kp X           &kp C            &kp V           &kp B             &kp N        &kp M           &kp COMMA         &kp PERIOD      &kp FSLH                 &none
+                                                &kp GRAVE        &lt 2 TAB       &mt LCMD SPACE    &lt 1 ENTER  &kp BACKSPACE   &kp ESCAPE
             >;
         };
 
         arrows_and_symbols {
             bindings = <
 &trans  &trans     &kp NUMBER_1       &mt LSHIFT NUMBER_2  &kp NUMBER_3       &kp GREATER_THAN    &kp BACKSLASH      &kp MINUS            &mt LSHIFT SQT  &kp PLUS         &trans     &trans
-&trans  &kp LCTRL  &mt LALT NUMBER_4  &kt NUMBER_5         &mt LCMD NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &mt LCMD UNDERSCORE  &kp UP_ARROW    &mt LALT EQUAL   &kp LCTRL  &trans
+&trans  &kp LCTRL  &mt LALT NUMBER_4  &kp NUMBER_5         &mt LCMD NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &mt LCMD UNDERSCORE  &kp UP_ARROW    &mt LALT EQUAL   &kp LCTRL  &trans
 &trans  &trans     &kp NUMBER_7       &kp NUMBER_8         &kp NUMBER_9       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
                                       &trans               &kp NUMBER_0       &kp SPACE           &trans             &trans               &trans
             >;
         };
 
-        numbers {
-            bindings = <
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp COMMA    &trans  &kp ASTERISK    &kp PERCENT       &kp PLUS        &trans     &trans
-&trans  &trans  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp DOT      &trans  &mt LCMD SLASH  &mt LSHIFT EQUAL  &mt LALT MINUS  &kp LCTRL  &trans
-&trans  &trans  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &trans       &trans  &trans          &trans            &trans          &trans     &trans
-                              &kp BACKSPACE  &kp NUMBER_0  &trans       &trans  &trans          &trans
-            >;
-        };
-
         functional {
             bindings = <
-&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &bt BT_NXT
+&tog 3  &trans  &kp F1  &kp F2  &kp F3  &kp F10    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &bt BT_NXT
 &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &bt BT_CLR
 &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12    &trans  &trans                &kp K_MUTE         &trans                &trans  &trans
                         &trans  &trans  &trans     &trans  &kp BACKSPACE         &trans
@@ -79,9 +69,9 @@
 
         game_mode {
             bindings = <
-&tog 2  &kp ESCAPE      &kp Q  &kp W     &kp E     &kp R        &kp Y      &kp U          &kp I      &kp O       &kp P          &kp LEFT_BRACKET
+&tog 3  &kp ESCAPE      &kp Q  &kp W     &kp E     &kp R        &kp Y      &kp U          &kp I      &kp O       &kp P          &kp LEFT_BRACKET
 &trans  &kp LEFT_SHIFT  &kp A  &kp S     &kp D     &kp F        &kp H      &kp J          &kp K      &kp L       &kp SEMICOLON  &kp SQT
-&tog 4  &kp LCTRL       &kp Z  &kp X     &kp C     &kp V        &kp N      &kp M          &kp COMMA  &kp PERIOD  &kp FSLH       &tog 4
+&trans  &kp LCTRL       &kp Z  &kp X     &kp C     &kp V        &kp N      &kp M          &kp COMMA  &kp PERIOD  &kp FSLH       &trans
                                &kp LALT  &kp LCMD  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp RSHFT
             >;
         };
