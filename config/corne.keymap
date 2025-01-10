@@ -16,6 +16,8 @@
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <130>;
         };
     };
 
@@ -42,10 +44,10 @@
 
         base {
             bindings = <
-&kp ESCAPE     &kp Q            &kp W           &cstmmt LSHFT E  &kp R           &kp T             &kp Y        &kp U                 &cstmmt LSHIFT I  &kp O           &kp P                    &kp LEFT_BRACKET
-&kp CAPSLOCK   &cstmmt LCTRL A  &cstmmt LALT S  &kp D            &cstmmt LCMD F  &kp G             &kp H        &cstmmt LCMD J        &kp K             &cstmmt LALT L  &cstmmt LCTRL SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z            &kp X           &kp C            &kp V           &kp B             &kp N        &kp M                 &kp COMMA         &kp PERIOD      &kp FSLH                 &none
-                                                &kp GRAVE        &lt 2 TAB       &mt LCMD SPACE    &lt 1 ENTER  &mt LSHIFT BACKSPACE  &kp ESCAPE
+&kp ESCAPE     &kp Q            &kp W           &cstmmt LSHFT E  &kp R           &kp T             &kp Y        &kp U           &cstmmt LSHIFT I  &kp O           &kp P                    &kp LEFT_BRACKET
+&kp CAPSLOCK   &cstmmt LCTRL A  &cstmmt LALT S  &kp D            &cstmmt LCMD F  &kp G             &kp H        &cstmmt LCMD J  &kp K             &cstmmt LALT L  &cstmmt LCTRL SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z            &kp X           &kp C            &kp V           &kp B             &kp N        &kp M           &kp COMMA         &kp PERIOD      &kp FSLH                 &none
+                                                &lt 2 GRAVE      &mt LSHIFT TAB  &mt LCMD SPACE    &lt 1 ENTER  &kp BACKSPACE   &kp ESCAPE
             >;
         };
 
