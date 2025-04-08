@@ -45,7 +45,7 @@
         base {
             bindings = <
 &kp ESCAPE     &kp Q            &kp W           &cstmmt LSHFT E  &kp R           &kp T             &kp Y        &kp U           &cstmmt LSHIFT I  &kp O           &kp P                    &kp LEFT_BRACKET
-&kp CAPSLOCK   &cstmmt LCTRL A  &cstmmt LALT S  &kp D            &cstmmt LCMD F  &kp G             &kp H        &cstmmt LCMD J  &kp K             &cstmmt LALT L  &cstmmt LCTRL SEMICOLON  &kp SQT
+&none          &cstmmt LCTRL A  &cstmmt LALT S  &kp D            &cstmmt LCMD F  &kp G             &kp H        &cstmmt LCMD J  &kp K             &cstmmt LALT L  &cstmmt LCTRL SEMICOLON  &kp SQT
 &kp BACKSPACE  &kp Z            &kp X           &kp C            &kp V           &kp B             &kp N        &kp M           &kp COMMA         &kp PERIOD      &kp FSLH                 &none
                                                 &lt 2 GRAVE      &mt LSHIFT TAB  &mt LCMD SPACE    &lt 1 ENTER  &kp BACKSPACE   &kp ESCAPE
             >;
@@ -53,10 +53,10 @@
 
         arrows_and_symbols {
             bindings = <
-&trans  &trans     &kp NUMBER_1       &mt LSHIFT NUMBER_2  &kp NUMBER_3       &kp GREATER_THAN    &kp BACKSLASH      &kp MINUS            &mt LSHIFT SQT  &kp PLUS         &trans     &trans
-&trans  &kp LCTRL  &mt LALT NUMBER_4  &kp NUMBER_5         &mt LCMD NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &mt LCMD UNDERSCORE  &kp UP_ARROW    &mt LALT EQUAL   &kp LCTRL  &trans
-&trans  &trans     &kp NUMBER_7       &kp NUMBER_8         &kp NUMBER_9       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
-                                      &trans               &kp NUMBER_0       &kp SPACE           &trans             &trans               &trans
+&trans  &trans     &kp NUMBER_1           &cstmmt LSHIFT NUMBER_2  &kp NUMBER_3           &kp GREATER_THAN    &kp BACKSLASH      &kp MINUS                &cstmmt LSHIFT SQT  &kp PLUS            &trans     &trans
+&trans  &kp LCTRL  &cstmmt LALT NUMBER_4  &kp NUMBER_5             &cstmmt LCMD NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &cstmmt LCMD UNDERSCORE  &kp UP_ARROW        &cstmmt LALT EQUAL  &kp LCTRL  &trans
+&trans  &trans     &kp NUMBER_7           &kp NUMBER_8             &kp NUMBER_9           &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_ARROW           &kp DOWN_ARROW      &kp RIGHT_ARROW     &trans     &trans
+                                          &trans                   &kp NUMBER_0           &kp SPACE           &trans             &trans                   &trans
             >;
         };
 
@@ -65,7 +65,7 @@
 &tog 3  &trans  &kp F1  &kp F2  &kp F3  &kp F10    &trans  &trans                &kp C_VOLUME_UP    &trans                &trans  &bt BT_NXT
 &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &kp C_BRIGHTNESS_INC  &trans  &bt BT_CLR
 &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12    &trans  &trans                &kp K_MUTE         &trans                &trans  &trans
-                        &trans  &trans  &trans     &trans  &kp BACKSPACE         &trans
+                        &trans  &trans  &trans     &trans  &trans                &trans
             >;
         };
 
