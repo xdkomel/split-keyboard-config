@@ -53,10 +53,10 @@
 
         arrows_and_symbols {
             bindings = <
-&trans  &trans     &kp NUMBER_1           &cstmmt LSHIFT NUMBER_2  &kp NUMBER_3           &kp GREATER_THAN    &kp BACKSLASH      &kp MINUS                &cstmmt LSHIFT SQT  &kp PLUS            &trans     &trans
-&trans  &kp LCTRL  &cstmmt LALT NUMBER_4  &kp NUMBER_5             &cstmmt LCMD NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &cstmmt LCMD UNDERSCORE  &kp UP_ARROW        &cstmmt LALT EQUAL  &kp LCTRL  &trans
-&trans  &trans     &kp NUMBER_7           &kp NUMBER_8             &kp NUMBER_9           &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_ARROW           &kp DOWN_ARROW      &kp RIGHT_ARROW     &trans     &trans
-                                          &trans                   &kp NUMBER_0           &kp SPACE           &trans             &trans                   &trans
+&trans  &trans     &kp NUMBER_1       &mt LSHIFT NUMBER_2  &kp NUMBER_3       &kp GREATER_THAN    &kp BACKSLASH      &kp MINUS                &cstmmt LSHIFT SQT  &kp PLUS            &trans     &trans
+&trans  &kp LCTRL  &mt LALT NUMBER_4  &kp NUMBER_5         &mt LCMD NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &cstmmt LCMD UNDERSCORE  &kp UP_ARROW        &cstmmt LALT EQUAL  &kp LCTRL  &trans
+&trans  &trans     &kp NUMBER_7       &kp NUMBER_8         &kp NUMBER_9       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_ARROW           &kp DOWN_ARROW      &kp RIGHT_ARROW     &trans     &trans
+                                      &trans               &kp NUMBER_0       &kp SPACE           &trans             &trans                   &trans
             >;
         };
 
