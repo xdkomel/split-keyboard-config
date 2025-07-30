@@ -42,7 +42,7 @@
         };
 
         cmd_tab {
-            bindings = <&mt LMETA TAB>;
+            bindings = <&kp LG(TAB)>;
             key-positions = <37 16>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
@@ -50,7 +50,7 @@
         };
 
         ctrl_tab {
-            bindings = <&mt LEFT_CONTROL TAB>;
+            bindings = <&kp LC(TAB)>;
             key-positions = <13 37>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
@@ -58,8 +58,8 @@
         };
 
         cmd_tilda {
-            bindings = <&mt LCMD GRAVE>;
-            key-positions = <13 37>;
+            bindings = <&kp LC(TAB)>;
+            key-positions = <16 36>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
             layers = <0>;
