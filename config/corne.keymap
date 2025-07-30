@@ -64,6 +64,11 @@
             require-prior-idle-ms = <50>;
             layers = <0>;
         };
+
+        spoghtlight {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <13 38>;
+        };
     };
 
     keymap {
