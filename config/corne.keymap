@@ -76,19 +76,19 @@
 
         base {
             bindings = <
-&kp ESCAPE     &kp Q         &kp W        &hrm LSHFT E      &kp R         &kp T        &kp Y      &kp U          &hrm LSHIFT I  &kp O        &kp P                 &kp LEFT_BRACKET
-&none          &hrm LCTRL A  &hrm LALT S  &kp D             &hrm LCMD F   &kp G        &kp H      &hrm LCMD J    &kp K          &hrm LALT L  &hrm LCTRL SEMICOLON  &kp SQT
-&kp BACKSPACE  &kp Z         &kp X        &kp C             &kp V         &kp B        &kp N      &kp M          &kp COMMA      &kp PERIOD   &lt 2 SLASH           &none
-                                          &mt LSHIFT GRAVE  &mt LCMD TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &lt 1 ESCAPE
+&kp ESCAPE     &kp Q         &kp W        &hrm LSHFT E      &kp R         &kp T        &kp Y      &kp U            &hrm LSHIFT I  &kp O        &kp P                 &kp LEFT_BRACKET
+&none          &hrm LCTRL A  &hrm LALT S  &kp D             &hrm LCMD F   &kp G        &kp H      &hrm LCMD J      &kp K          &hrm LALT L  &hrm LCTRL SEMICOLON  &kp SQT
+&kp BACKSPACE  &kp Z         &kp X        &kp C             &kp V         &kp B        &kp N      &kp M            &kp COMMA      &kp PERIOD   &lt 2 SLASH           &none
+                                          &mt LSHIFT GRAVE  &mt LCMD TAB  &kp SPACE    &kp ENTER  &lt 1 BACKSPACE  &kp ESC
             >;
         };
 
         arrows_and_symbols {
             bindings = <
-&trans  &trans     &kp NUMBER_1       &mt LSHIFT NUMBER_2  &kp NUMBER_3       &kp GREATER_THAN    &kp BACKSLASH      &kp MINUS             &hrm LSHIFT SQT  &kp PLUS         &trans     &trans
-&trans  &kp LCTRL  &mt LALT NUMBER_4  &kp NUMBER_5         &mt LCMD NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &hrm LCMD UNDERSCORE  &kp UP_ARROW     &hrm LALT EQUAL  &kp LCTRL  &trans
-&trans  &trans     &kp NUMBER_7       &kp NUMBER_8         &kp NUMBER_9       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_ARROW        &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans     &trans
-                                      &trans               &kp NUMBER_0       &kp SPACE           &trans             &trans                &trans
+&trans  &trans     &kp NUMBER_1        &hrm LSHIFT NUMBER_2  &kp NUMBER_3        &kp GREATER_THAN    &kp BACKSLASH      &kp MINUS             &hrm LSHIFT SQT  &kp PLUS         &trans     &trans
+&trans  &kp LCTRL  &hrm LALT NUMBER_4  &kp NUMBER_5          &hrm LCMD NUMBER_6  &kp LEFT_BRACE      &kp RIGHT_BRACE    &hrm LCMD UNDERSCORE  &kp UP_ARROW     &hrm LALT EQUAL  &kp LCTRL  &trans
+&trans  &trans     &kp NUMBER_7        &kp NUMBER_8          &kp NUMBER_9        &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_ARROW        &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans     &trans
+                                       &trans                &kp NUMBER_0        &trans              &trans             &trans                &trans
             >;
         };
 
