@@ -58,7 +58,7 @@
         };
 
         cmd_tilda {
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp LC(TILDE)>;
             key-positions = <16 36>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
